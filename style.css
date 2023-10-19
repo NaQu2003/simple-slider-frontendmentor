@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+body{
+    margin:0px;
+    padding:0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('images/pattern-curve.svg');
+    background-repeat: no-repeat;
+    background-position: bottom -75px left -50px ;
+    font-family: "Inter";
+    
+}
+*{
+    box-sizing: border-box;
+}
+img{
+    width:100%;
+}
+
+.right{
+    text-align: center;
+    max-width: 300px;
+    width:100%;
+    background-image: url('images//pattern-quotes.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 20%;
+    padding-top:10px;
+}
+.left > img{
+    max-width: 250px;
+    box-shadow: 10px 20px 10px rgba(0,0,0,0.15)
+}
+.left{
+    padding:28px;
+    text-align: center;
+    background-image: url('images/pattern-bg.svg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position:center top;
+    position: relative;
+    margin-bottom:60px;
+    
+}
+.controls{
+    width:76px;
+    background-color:white;
+    position: absolute;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    border-radius: 20px;
+    bottom: 10px;
+    right:0px;
+    left:0px;
+    margin:auto;
+}
+.controls button img{
+    width:10px;
+}
+.controls button{
+    display:flex;
+    justify-content: center;
+    background:none;
+    border:none;
+    width:10px;
+    cursor: pointer;
+}
+.controls button:hover{
+    transform: scale(1.2)
+}
+.text-1{
+    color:#4b495f;
+    font-weight: 300;
+}
+
+.personal{
+    display:flex;
+    flex-direction: column;
+}
+.name{
+    font-weight: 700;
+    color:hsl(240, 38%, 20%);
+    font-size:24px;
+}
+.profession{
+    font-weight: 300;
+    color:hsl(240, 18%, 77%);
+    font-size:24px;
+}
+
+
+@media screen and (min-width:768px){
+    body{
+        font-size: 32px;
+    }
+    .container{
+        display:flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: flex-start;
+        
+        
+    }
+    .right{
+        max-width: 630px;
+        text-align: left;
+        background-position:left 100px top;
+        position: relative;
+        left:105px;
+        
+        
+    }
+    .personal{
+        flex-direction: row;
+    }
+    .name{
+        margin-right:8px;
+    }
+    .left > img{
+        max-width: 540px;
+
+    }
+    .left{
+        display:flex;
+        background-size: 100% 100%;
+        padding:4.3%;
+        background-position: center center;
+        
+        
+        
+        
+    }
+    .controls{
+        margin:unset;
+        left:15%;
+        bottom:6%;
+    }
+}
